@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kreiranje responsive design</title>
+    <style> 
+    body {
+        width: 960px;
+        max-width: 90%;
+        margin: 0 auto;
+        font-family: sans-serif;
+        color:rgb(86, 81, 81);
+       }
+     
+    
+.grid-container {
+    display: grid;
+    width: 960px;
+    margin: 0 auto;
+    row-gap: 50px;
+    column-gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-basis: 20%;
+    
+}
+.grid-container> div {
+    background-color: rgb(0, 174, 255);
+    border: 1px solid rgb(0, 174, 255);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    width: 80px;
+    height: 60px;
+    background-image: url("placeholder-image.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    flex-basis: 20%;
+}
+
+
+h2 {
+    float:inline-start;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+p {
+    width: 860px;
+    margin: 50px 0 30px 0;
+}
+.p1 {
+    position: absolute;
+    margin-top: 60px;
+    font-size: 10px;
+    text-align: center;
+    background-color:antiquewhite;
+    width: 82px;
+    height: 18px;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 3px;
+   }
+
+   @media screen and (max-width: 1024px) {
+       .grid-container {
+         grid-template-columns: repeat(3, 1fr);
+        }
+   }
+   @media screen and (max-width: 768px) {
+    .grid-container {
+         grid-template-columns: repeat(3, 2fr);
+        }
+    }
+   @media screen and (max-width: 414px) {
+      .grid-container {
+         grid-template-columns: repeat(1, 3fr);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <h2>Gallery Heading</h2>
+
+     <div class="grid-container">
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div> 
+    
+    
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div>
+    
+    
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div>
+
+    
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div>
+
+   
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div>
+
+    
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div>
+
+   
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+     </div>
+
+     
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+     </div>
+
+     
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div>
+
+    
+
+        <div class="grid-item">
+            <div class="p1">Image Title</div>
+    </div>
+
+     </div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     
+
+
+
+</body>
+</html>
